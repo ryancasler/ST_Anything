@@ -52,11 +52,11 @@ def logsOff(){
 
 // handle commands
 def open() {
-	if(device.currentValue("door") == "closed") sendData("on")
+	sendData("on")
 }
 
 def close() {
-	if(device.currentValue("door") == "open") sendData("on")
+	sendData("off")
 }
 
 def push() {
