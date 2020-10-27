@@ -197,7 +197,7 @@ namespace st
 			st_client.print(st_hubIP);
 			st_client.print(F(":"));
 			st_client.println(st_hubPort);
-			st_client.println(F("CONTENT-TYPE: text"));
+			st_client.println(F("CONTENT-TYPE: text/plain"));
 			st_client.print(F("CONTENT-LENGTH: "));
 			st_client.println(message.length());
 			st_client.println();
@@ -242,7 +242,7 @@ namespace st
 				st_client.print(st_hubIP);
 				st_client.print(F(":"));
 				st_client.println(st_hubPort);
-				st_client.println(F("CONTENT-TYPE: text"));
+				st_client.println(F("CONTENT-TYPE: text/plain"));
 				st_client.print(F("CONTENT-LENGTH: "));
 				st_client.println(message.length());
 				st_client.println();
